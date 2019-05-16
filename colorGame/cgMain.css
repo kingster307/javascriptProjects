@@ -1,0 +1,79 @@
+body{
+    background-color: #232323;
+    margin:0px;
+}
+.sqaure{
+    width: 30%;
+    background-color: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+
+     /* this is old new */
+     border-radius: 15%;
+
+     /* this is new > wont work on all browsers  */
+     transition: background .8s;
+    /* no difference in functionality but for browser support */
+    /* engine that browsers use */
+     -webkit-transition: background .8s;
+     -moz-transition: background .8s;
+}
+.container{
+    max-width: 600px;
+    margin: 20px auto;
+
+}
+h1{
+    color:#ffffff;
+    text-align: center;
+    line-height: 1.4;
+    background-color: steelblue;
+    margin: 0px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#colorDisplay{
+    font-size: 200%;
+}
+/* span{
+    color:#ffffff;
+
+} */
+#stripe{
+    background-color: #ffffff;
+    height: 30px;
+    text-align: center;
+}
+.selected{
+    background: steelblue;
+    color: white;
+}
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    
+    /* new */
+    font-size: inherit;
+    
+    /* this is new */
+    transition: all .8s;
+
+    /* this is new > removes the outline around selected buttons  */
+    outline: none;
+}
+#message{
+    display: inline-block;
+    width: 20%;
+}
+button:hover{
+    color:white;
+    background: steelblue;
+}
